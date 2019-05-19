@@ -5,6 +5,7 @@ import { AppRoutingModule } from './route/app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './home/navbar/navbar.component';
+import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { NavbarComponent } from './home/navbar/navbar.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [{provide: APP_BASE_HREF, useValue: '/'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
