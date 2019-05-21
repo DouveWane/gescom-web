@@ -1,1 +1,6 @@
-<app-home></app-home>
+<app-header [hidden]="env.isHiddenDashbord"></app-header>
+<app-navbar [hidden]="env.isHiddenDashbord"></app-navbar>
+
+<app-athentification *ngIf="env.isHiddenDashbord"></app-athentification>
+
+
