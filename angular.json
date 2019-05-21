@@ -25,7 +25,15 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/gescom-script/vendor/jquery/jquery-1.11.1.min.js",
+              "node_modules/gescom-script/vendor/jquery/jquery_ui/jquery-ui.min.js",
+              "node_modules/gescom-script/js/utility/utility.js",
+              "node_modules/gescom-script/js/demo/demo.js",
+              "node_modules/gescom-script/js/main.js"
+              
+
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
@@ -83,11 +91,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/gescom-script/vendor/jquery/jquery-1.11.1.min.js",
-              "node_modules/gescom-script/vendor/jquery/jquery_ui/jquery-ui.min.js",
-              "node_modules/gescom-script/js/utility/utility.js",
-              "node_modules/gescom-script/js/demo/demo.js",
-              "node_modules/gescom-script/js/main.js"
+
             ],
             "assets": [
               "src/favicon.ico",
