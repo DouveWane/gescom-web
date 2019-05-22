@@ -1,0 +1,240 @@
+<!-- Begin: Content -->
+<section id="content" class="table-layout animated fadeIn">
+
+  <!-- begin: .tray-center -->
+  <div class="tray tray-center">
+
+    <!-- create new order panel -->
+    <div class="panel mb25 mt5">
+      <div class="panel-heading">
+        <span class="panel-title hidden-xs"> {{header_Tab.title}}</span>
+        <ul class="nav panel-tabs-border panel-tabs">
+
+          <li>
+            <a href="#tab1_2" data-toggle="tab"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="panel-body p20 pb10">
+        <div class="tab-content pn br-n admin-form">
+          <div id="tab1_2" class="tab-pane active">
+
+            <div class="section row">
+              <label for="account-email" class="field-label col-md-2 text-center">Profil:</label>
+              <div class="col-md-9">
+                <label for="account-email" class="field prepend-icon">
+                  <input type="text" name="boutique-email" id="boutique-email" readonly class="gui-input" value="">
+
+                </label>
+              </div>
+
+            </div>
+            <div class="section row">
+                <label for="account-email" class="field-label col-md-2 text-center">Rubriques:</label>
+              <div class="col-md-10  pl20 prn">
+                <div class="section mv15">
+                  <div class="option-group field">
+                    <label class="option">
+                      <input type="checkbox" name="checked" value="checked" checked>
+                      <span class="checkbox"></span>Check</label>
+                    <label class="option">
+                      <input type="checkbox" name="disabled" value="disabled" disabled>
+                      <span class="checkbox"></span>Disable</label>
+                    <label class="option">
+                      <input type="checkbox" name="mobileos" value="CH">
+                      <span class="checkbox"></span>Empty</label>
+                  </div>
+                  <!-- end .option-group section -->
+                </div>
+
+              </div>
+            </div>
+            <div class="section row mbn">
+              <div class="col-sm-4 pull-right">
+                <p class="text-right">
+                  <button class="btn btn-primary" type="button">Enregistrer </button>
+                </p>
+              </div>
+            </div>
+            <!-- end section -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- recent orders table -->
+    <div class="panel">
+
+      <div class="panel-body pn">
+        <div class="table-responsive">
+          <table class="table admin-form theme-warning tc-checkbox-1 fs13">
+            <thead>
+              <tr class="bg-light">
+
+                <th class="">ID</th>
+                <th class="">Libelle</th>
+                <th class="">Rubriques</th>
+                <th class="text-right">Statut</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-justify">Apple Ipod 4G - Silver</td>
+                <td class="text-justify">#21362</td>
+                <td class="text-justify">1,400</td>
+                <td class="text-right">
+                  <div class="btn-group text-right">
+                    <button type="button" class="btn btn-success br2 btn-xs fs12 dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Active
+                      <span class="caret ml5"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li>
+                        <a href="#">Actif</a>
+                      </li>
+                      <li>
+                        <a href="#">Inactif</a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+
+                <td class="text-justify">Apple Ipod Nano 2G - Silver</td>
+                <td class="text-justify">#4132</td>
+                <td class="text-danger text-justify">
+                  <b>0 - Sold Out</b>
+                </td>
+                <td class="text-right">
+                  <div class="btn-group text-right">
+                    <button type="button" class="btn btn-danger br2 btn-xs fs12 dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Sold Out
+                      <span class="caret ml5"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li>
+                        <a href="#">Actif</a>
+                      </li>
+                      <li>
+                        <a href="#">Inactif</a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- end: .tray-center -->
+
+  <!-- begin: .tray-right -->
+  <aside class="tray tray-right tray290">
+
+    <!-- menu quick links -->
+    <div class="admin-form">
+
+      <h4> Filter Products</h4>
+
+      <hr class="short">
+
+      <div class="section mb15">
+        <label for="order-id" class="field prepend-icon">
+          <input type="text" name="order-id" id="order-id" class="gui-input" placeholder="Product SKU #">
+          <label for="order-id" class="field-icon">
+            <i class="fa fa-tag"></i>
+          </label>
+        </label>
+      </div>
+
+      <h5><small>Price Range($)</small></h5>
+      <div class="section row mb15">
+        <div class="col-md-6">
+          <label for="price1" class="field prepend-icon">
+            <input type="text" name="price1" id="price1" class="gui-input" placeholder="0">
+            <label for="price1" class="field-icon">
+              <i class="fa fa-usd"></i>
+            </label>
+          </label>
+        </div>
+        <div class="col-md-6">
+          <label for="price2" class="field prepend-icon">
+            <input type="text" name="price2" id="price2" class="gui-input" placeholder="1000">
+            <label for="price2" class="field-icon">
+              <i class="fa fa-usd"></i>
+            </label>
+          </label>
+        </div>
+      </div>
+
+      <h5><small>Sales Date</small></h5>
+      <div class="section row">
+        <div class="col-md-6">
+          <label for="date1" class="field prepend-icon">
+            <input type="text" name="date1" id="date1" class="gui-input" placeholder="01/01/15">
+            <label for="date1" class="field-icon">
+              <i class="fa fa-calendar"></i>
+            </label>
+          </label>
+        </div>
+        <div class="col-md-6">
+          <label for="date2" class="field prepend-icon">
+            <input type="text" name="date2" id="date2" class="gui-input" placeholder="01/31/15">
+            <label for="date2" class="field-icon">
+              <i class="fa fa-calendar"></i>
+            </label>
+          </label>
+        </div>
+      </div>
+
+      <h5><small>Search Categories</small></h5>
+      <div class="section mb15">
+        <label class="field select">
+          <select id="filter-categories" name="filter-categories">
+            <option value="0" selected="selected">Filter by Categories</option>
+            <option value="1">Electronics</option>
+            <option value="2">Software</option>
+          </select>
+          <i class="arrow double"></i>
+        </label>
+      </div>
+
+      <h5><small>Search Customers</small></h5>
+      <div class="section">
+        <label class="field select">
+          <select id="filter-customers" name="filter-customers">
+            <option value="0" selected="selected">Filter by Vendor</option>
+            <option value="1">Michael</option>
+            <option value="2">David</option>
+            <option value="3">Sara</option>
+            <option value="4">Tasha</option>
+          </select>
+          <i class="arrow double"></i>
+        </label>
+      </div>
+
+      <hr class="short">
+
+      <div class="section">
+          <button class="btn btn-default btn-sm ph25" type="button">Search</button>
+          <label class="field option ml15">
+            <input type="checkbox" name="info">
+            <span class="checkbox"></span>
+            <span class="text-muted">Save Search</span>
+          </label>
+      </div>
+
+    </div>
+
+  </aside>
+  <!-- end: .tray-right -->
+
+</section>
+<!-- End: Content -->

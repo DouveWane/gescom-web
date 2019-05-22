@@ -8,6 +8,12 @@ import { APP_BASE_HREF } from '@angular/common';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AthentificationComponent } from './pages/athentification/athentification.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { SocieteComponent } from './pages/securite/societe/societe.component';
+import { UtilisateurComponent } from './pages/securite/utilisateur/utilisateur.component';
+import { ProfilComponent } from './pages/securite/profil/profil.component';
+import { RubriqueComponent } from './pages/securite/rubrique/rubrique.component';
 
 
 @NgModule({
@@ -15,7 +21,13 @@ import { AthentificationComponent } from './pages/athentification/athentificatio
     AppComponent,
     NavbarComponent,
     HeaderComponent,
-    AthentificationComponent
+    AthentificationComponent,
+    PageNotFoundComponent,
+    DashboardComponent,
+    SocieteComponent,
+    UtilisateurComponent,
+    ProfilComponent,
+    RubriqueComponent
   ],
   imports: [
     BrowserModule,
